@@ -118,3 +118,18 @@ var vystavba = [
         "photo": "vystavba3.jpeg"
     }
 ];
+
+var zajimavosti = [ 
+    {
+        "title":"Nejvyšší budova česka",
+        "text": "AZ Tower je výšková budova v Brně a nejvyšší budova Česka, postavená v letech 2011 až 2013. Nachází se v ulici Pražákova, v katastrálním území Štýřice, v městské části Brno-střed, poblíž M-Paláce a objektu Spielberk Tower.",
+    },
+    {
+        "title":"Specializovaní umývači oken",
+        "text": "K mytí oken mrakodrapu Burj Khalifa jsou zvenčí nainstalovány tři mycí plošiny, každá o hmotnosti 1 500 kg. Ta nejvyšší patra jsou však ponechána specialistům, kteří pracují v doslova extrémních podmínkách – umýt okna musí zvládnout zavěšeni na lanech ve výšce více než 800 metrů a práci jim ztěžují silné poryvy větru. Za normálních podmínek trvá 36 zaměstnancům 3-4 měsíce, než všechna okna vyčistí.",
+    },
+    {
+        "title":"Útoky z 11. září 2001",
+        "text": "byly sérií koordinovaných teroristických útoků, které se uskutečnily 11. září 2001 ve Spojených státech amerických. Podle oficiálního vyšetřování 19 mužů spojených s militantní islámskou organizací al-Kájda uneslo 4 letadla letící na komerčních linkách společnosti American Airlines a United Airlines. Dvě z nich (Let American Airlines č. 11, Let United Airlines č. 175) narazila do Světového obchodního centra v New Yorku a způsobila jejich zničení. Třetí letadlo (Let American Airlines č. 77) narazilo do Pentagonu, sídla Ministerstva obrany Spojených států amerických v hlavním městě USA, Washingtonu. Čtvrté letadlo (Let United Airlines č. 93) se zřítilo v neobývané oblasti v Pensylvánii po souboji mezi teroristy a pasažéry o ovládnutí letadla. Letadlo letělo na Washington a spekuluje se, že mělo za cíl zasáhnout Bílý dům a nebo americký Kapitol. Při útocích zahynulo celkem asi 3000 lidí.",
+    }
+];
