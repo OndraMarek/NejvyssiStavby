@@ -2,7 +2,7 @@ $(function(){
     var odkazy = $('#odkazy ul');
     var info = $('#info div');
     budovy.forEach(function(obj,idx){
-        info.append('<h4>'+obj.name+'</h4><li>Stát: '
+        info.append('<h4><b>'+obj.name+'</b></h4><li>Stát: '
                     +obj.state+'</li><li>Město: '
                     +obj.city+'</li><li>Výška: '
                     +obj.height+'</li><li>Počet pater: '
@@ -14,7 +14,7 @@ $(function(){
         if ($(this).nextUntil('h4').is(':hidden')) {
             $(this).css({'background-color':'#048'});
         } else {
-            $(this).css({'background-color':'#444'});
+            $(this).css({'background-color':'#115'});
         }
         $(this).nextUntil('h4').toggle(1000);
     });
@@ -68,4 +68,12 @@ $(function(){
             }
         });
     });
+
+    $("#tabulka").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#stareTable tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    
 });

@@ -51,7 +51,7 @@ h3 {
 }
 
 #info h4:hover {
-    background-color: rgb(161, 111, 77);
+    background-color: rgb(65, 173, 236);
 }
 
 #info li {
@@ -60,4 +60,16 @@ h3 {
 
 #info img {
     display: none;
+}
+
+#vystavba p {
+    font-family: 'Roboto', sans-serif;
+}
+
+#zajimavosti p {
+    font-family: 'Roboto', sans-serif;
+}
+
+#info li {
+    font-family: 'Roboto', sans-serif;
 }
