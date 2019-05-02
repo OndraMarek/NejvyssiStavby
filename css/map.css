@@ -11,3 +11,29 @@ a{
 a:hover{
     color: white;
 }
+
+.jumbotron {
+    background-color: rgba(0,40,90,0.7);
+}
+
+h2 {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    color: #04A;
+    margin-bottom: 1em;
+    font-weight: 700;
+}
+
+footer {
+    background-color: rgba(0,0,0,0.9);
+}
+
+h3 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.3em; 
+}

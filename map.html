@@ -11,15 +11,15 @@
     <link rel="stylesheet" href="css/map.css">   
   </head>
   <body>
-    <header class="jumbotron bg-info text-white">
-        <h1 class="text-center"><a href="index.html">Nejvyšší stavby světa</a></h1>
+    <header class="jumbotron text-white text-center text-uppercase p-5">
+        <h1 class="text-center display-2"><a href="index.html">Nejvyšší stavby světa</a></h1>
     </header>
     <main class="container">
         <div id="mapa">
             <?xml version="1.0" encoding="UTF-8"?>
             <svg width="353.13mm" height="179.21mm" version="1.1" viewBox="0 0 353.13 179.21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	        <g transform="translate(126.67 -28.99)">
-		<image x="-126.67" y="28.99" width="353.13" height="179.21" preserveAspectRatio="none" xlink:href="file:///C:/Users/theOn/Desktop/map.jpg"/>
+		<image x="-126.67" y="28.99" width="353.13" height="179.21" preserveAspectRatio="none" xlink:href="img/map.jpg"/>
 		<g fill="#00f" stroke-width=".26458">
 			<circle class="objekt" cx="102.57" cy="90.839" r="1.3229" data-nazev="Burdž Chalífa" data-rok="2009" data-fotka="img/budova1.jpg" data-mesto="Dubaj" data-stat="Spojené arabské emiráty" data-vyska="828 m"/>
 			<circle class="objekt" cx="161.72" cy="83.469" r="1.3229" data-nazev="Shanghai Tower" data-rok="2015" data-fotka="img/budova2.jpg" data-mesto="Šanghaj" data-stat="Čína" data-vyska="632 m"/>
@@ -35,7 +35,8 @@
 	</g>
 </svg>
         </div>
-        <div class="row pt-5">
+        <h3 class="row pt-2">Informace</h3>
+        <div class="row pt-1 pb-5 mb-5">
             <div class="col-md-8">
                 <div id="text">
                     <h2>Název objektu</h2>
@@ -55,9 +56,26 @@
             </div>
         </div>
     </main>
-    <footer class="container-fluid">
-        <hr>
-        <p>&copy; 2019 - IT2</p>
+    <footer class="pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <div class="text-secondary">
+                        <p><a href="https://www.sspu-opava.cz" target="_blank"><img src="img/skola-logo.png" alt="Logo školy"></a></p>
+                        <p>Stránka vznikla jako studijní práce v rámci předmětu Programové vybavení</p>
+                        <p>&copy; 2019 - SŠPU Opava</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    <h5 class="text-primary text-uppercase border-bottom mb-4 pb-3">Kontakt na autora</h5>
+                    <div class="text-secondary">
+                        <p><b>Ondřej Marek</b></p>
+                        <p>E-mail: czondrejmarek@gmail.cz</p>
+                        <p>Github: <a href="https://github.com/OndraMarek" target="_blank">https://github.com/OndraMarek</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
