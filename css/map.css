@@ -1,0 +1,13 @@
+img{
+    max-width:75%;
+    max-height:75%;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="353.13mm" height="179.21mm" version="1.1" viewBox="0 0 353.13 179.21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<g transform="translate(126.67 -28.99)">
+		<image x="-126.67" y="28.99" width="353.13" height="179.21" preserveAspectRatio="none" xlink:href="file:///C:/Users/theOn/Desktop/map.jpg"/>
+		<g fill="#00f" stroke-width=".26458">
+			<circle cx="102.57" cy="90.839" r="1.3229"/>
+			<circle cx="161.72" cy="83.469" r="1.3229"/>
+			<circle cx="88.018" cy="94.052" r="1.3229"/>
+			<circle cx="159.5" cy="93.674" r="1.3229"/>
+			<circle cx="166.64" cy="77.421" r="1.3229"/>
+			<circle cx="-17.437" cy="73.574" r="1.3229"/>
+			<circle cx="156.79" cy="92.727" r="1.3229"/>
+			<circle cx="155.94" cy="75.746" r="1.3229"/>
+			<circle cx="153.69" cy="73.764" r="1.3229"/>
+			<circle cx="165.88" cy="91.406" r="1.3229"/>
+		</g>
+	</g>
+</svg>
