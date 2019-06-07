@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "name":"Burdž Chalífa",
+        "year":"2009",
+        "city":"Dubaj",
+        "state":"Spojené arabské emiráty",
+        "height":"828 m"
+    },
+    {
+        "id":2,
+        "name":"Shanghai Tower",
+        "year":"2015",
+        "city":"Šanghaj",
+        "state":"Čína",
+        "height":"632 m"
+    },
+    {
+        "id":3,
+        "name":"Abrádž Al-Bajt",
+        "year":"2012",
+        "city":"Mekka",
+        "state":"Saúdská Arábie",
+        "height":"601 m"
+    }
+]
