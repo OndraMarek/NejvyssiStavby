@@ -10,10 +10,10 @@ $(function(){
                 console.log(textStatus);
                 console.log(data);
                 $('#list').html('');
-                data.forEach(function(film) {
-                    $('#list').append('<tr><td>'+film.id
-                        +'</td><td><a href="#" data-id="'+film.id+'">'+film.name
-                        +'</a></td><td>'+film.year+'</td><td>'+film.state+'</td><td><button class="btn btn-danger delete" data-id="'+film.id+'">Smazat</button></td></tr>');
+                data.forEach(function(stavba) {
+                    $('#list').append('<tr><td>'+stavba.id
+                        +'</td><td><a href="#" data-id="'+stavba.id+'">'+stavba.name
+                        +'</a></td><td>'+stavba.year+'</td><td>'+stavba.city+'</td><td>'+stavba.state+'</td><td>'+stavba.height+'</td><td><button class="btn btn-danger delete" data-id="'+stavba.id+'">Smazat</button></td></tr>');
                 });
                 $('#list a').on('click', function(){
                     getById($(this).data('id'));
@@ -41,8 +41,9 @@ $(function(){
                 $('#id').val(data.id);
                 $('#name').val(data.name);
                 $('#year').val(data.year);
+                $('#city').val(data.city);
                 $('#state').val(data.state);
-                $('#content').val(data.content);
+                $('#height').val(data.height);
                 $('#modelId').modal('show');
             },
             error: function (xhr, textStatus, errorThrown) {
@@ -111,8 +112,9 @@ $(function(){
         var json = {};
         json.name = $('#name').val();
         json.year = $('#year').val();
+        json.city = $('#city').val();
         json.state = $('#state').val();
-        json.content = $('#content').val();
+        json.height = $('#height').val();
         var data = JSON.stringify(json);
         if ($('#id').val()) {
             update($('#id').val(), data);
@@ -125,8 +127,9 @@ $(function(){
         $('#id').val('');
         $('#name').val('');
         $('#year').val('');
+        $('#city').val('');
         $('#state').val('');
-        $('#content').val('');
+        $('#height').val('');
     });
 
     getAll();

@@ -24,9 +24,9 @@ app.get("/api/stavby", (req, res) => {
    Response: výpis konkrétního filmu podle zadaného id ve formátu JSON  */
 app.get("/api/stavby/:id", (req, res) => {
   const id = Number(req.params.id);
-  const movie = stavby.find(movie => movie.id === id);
-  if (movie) {
-    res.send(movie);
+  const stavba = stavby.find(stavba => stavba.id === id);
+  if (stavba) {
+    res.send(stavba);
   } else {
     res.status(404).send("Stavba nebyla nalezena.");
   }
@@ -35,68 +35,71 @@ app.get("/api/stavby/:id", (req, res) => {
 /* Request: použití metody POST, URL adresy /api/stavby
    Response: výpis nového filmu   */
 app.post("/api/stavby", (req, res) => {
-  const { error } = validateMovie(req.body);
+  const { error } = validatestavba(req.body);
   if (error) {
     res.status(400).send(error);
   } else {
-    const movie = {
+    const stavba = {
       id: stavby.length !== 0 ? stavby[stavby.length - 1].id + 1 : 1,
       name: req.body.name,
       year: req.body.year,
+      city: req.body.city,
       state: req.body.state,
-      content: req.body.content,
+      height: req.body.height,
     };
-    stavby.push(movie);
-    res.send(movie);
+    stavby.push(stavba);
+    res.send(stavba);
     writeJSON(stavby, "stavby.json");
   }
 });
 
 app.put("/api/stavby/:id", (req, res) => {
   const id = Number(req.params.id);
-  const movie = stavby.find(movie => movie.id === id);
-  if (!movie) {
+  const stavba = stavby.find(stavba => stavba.id === id);
+  if (!stavba) {
     res.status(404).send("Film nebyl nalezen.");
     return;
   }
-  const { error } = validateMovie(req.body);
+  const { error } = validatestavba(req.body);
   if (error) {
     res.status(400).send(error.details[0].message);
   } else {
-    movie.name = req.body.name;
-    movie.year = req.body.year;
-    movie.state = req.body.state;
-    movie.content = req.body.content;
-    res.send(movie);
+    stavba.name = req.body.name;
+    stavba.year = req.body.year;
+    stavba.city = req.body.city;
+    stavba.state = req.body.state;
+    stavba.height = req.body.height;
+    res.send(stavba);
     writeJSON(stavby, "stavby.json");
   }
 });
 
 app.delete("/api/stavby/:id", (req, res) => {
   const id = Number(req.params.id);
-  const movie = stavby.find(movie => movie.id === id);
-  if (!movie) {
+  const stavba = stavby.find(stavba => stavba.id === id);
+  if (!stavba) {
     res.status(404).send("Film nebyl nalezen.");
   } else {
-    const index = stavby.indexOf(movie);
+    const index = stavby.indexOf(stavba);
     stavby.splice(index, 1);
-    res.send(movie);
+    res.send(stavba);
     writeJSON(stavby, "stavby.json");
   }
 });
 
 app.listen(3000, () => console.log("Listening on port 3000..."));
 
-function validateMovie(movie) {
+function validatestavba(stavba) {
   const schema = {
     name: Joi.string()
       .min(2)
       .required(),
     year: Joi.number(),
+    city: Joi.string(),
     state: Joi.string(),
-    content: Joi.string()
+    height: Joi.number()
   };
-  return Joi.validate(movie, schema);
+  return Joi.validate(stavba, schema);
 }
 
 function writeJSON(jsonData, pathToFile) {

@@ -10,7 +10,7 @@
     "REST",
     "API"
   ],
-  "author": "Marek Lučný",
+  "author": "Ondřej Marek",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
